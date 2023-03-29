@@ -1,13 +1,147 @@
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  background-color: #6C63FF;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root{
+  width: 100%;
+  height: 100%;
+}
+
+*{
+  color: white;
+  font-size: 1rem;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.image{
+  height: 100vh !important;
+  width: 50%;
+  background-color: white;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: -1;
+}
+
+.app_logo {
+  height: 30%;
+  display: block;
+  padding: 30px;
+}
+
+.clip_path{
+  width: 50%;
+  height: 100%;
+  background-color: #6C63FF;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0px 20px;
+}
+
+
+.form_input{
+  width: 100%;
+  color: black;
+  text-decoration: none;
+  margin: 5px 0px 10px 0px;
+  border: none;
+  border-radius: 5px;
+}
+
+.form_input::placeholder{
+  color: hsla(243, 100%, 69%, 0.5);
+}
+.form_input:focus{
+  outline: 2px solid black;
+}
+
+.submit{
+  background-color: white;
+  color: #6C63FF;
+  padding: 10px 0px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  width: 100%;
+  text-decoration: none;
+}
+
+.submit:hover{
+  color: white;
+  background-color: #6C63FF;
+  border: 1px solid white;
+  transition: 0.8s;
+}
+
+.form_label{
+  width: 100%;
+  text-align: left;
+}
+
+.form_select{
+  color: hsla(243, 100%, 69%, 0.5);
+  width: 100%;
+  margin: 5px 0px 10px 0px;
+  border: none;
+  border-radius: 5px;
+}
+
+.select_option{
+  color: #6C63FF;
+}
+
+.select_option:hover{
+  background-color: yellow;
+  color: white;
+}
+
+.result{
+  padding: 10px 0px;
+}
+
+.alert{
+  background-color: crimson;
+  padding: 5px;
+  border-radius: 5px;
+  width: 200px;
+  color: white;
+  margin-bottom: 40px;
+}
+
