@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/silva/static/css/main.32a933d7.css",
+    "main.js": "/silva/static/js/main.23847c2b.js",
+    "static/media/cat.svg": "/silva/static/media/cat.014e0cac9ded85ca70fd8ad5f878c75f.svg",
+    "index.html": "/silva/index.html",
+    "main.32a933d7.css.map": "/silva/static/css/main.32a933d7.css.map",
+    "main.23847c2b.js.map": "/silva/static/js/main.23847c2b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32a933d7.css",
+    "static/js/main.23847c2b.js"
+  ]
+}
